@@ -14,7 +14,7 @@ class music_cog(commands.Cog):
 
 		self.music_queue = []
 		self.YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist': 'True'}
-		self.FFMPEG_OPTIONS {'before_options': '-reconnect 1 -reconnected_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
+		self.FFMPEG_OPTIONS {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
 
 		self.vc = None
 
@@ -131,7 +131,7 @@ class music_cog(commands.Cog):
 	async def leave(self, ctx):
 		self.is_playing = False
 		self.is_paused = False
-		await self.vc.disconnect()
+		await self.vc.disconnect
 
 
 
